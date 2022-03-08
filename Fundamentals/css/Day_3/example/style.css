@@ -1,0 +1,34 @@
+#flag {
+    width: 700px;
+    height: 400px;
+    border: solid;
+    display: flex;
+}
+#blue {
+    flex: 1; /* Think of portions of a pie */
+    height: 100%;
+    background-color: blue;
+}
+#green {
+    flex: 2;
+    height: 100%;
+    background-color: green;
+    margin: 0px 10px;
+}
+#red {
+    flex: 1;
+    height: 100%;
+    background-color: red;
+}
+#parent {
+    display: flex;
+    justify-content: space-around; /* Justify-content moves left and right */
+    background-color: burlywood;
+    height: 300px;
+    align-items: center;/* align-items moves up and down */
+}
+.boxes {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+}

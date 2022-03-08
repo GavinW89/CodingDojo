@@ -1,0 +1,23 @@
+#container{
+    background-color: black;
+    width: 500px;
+    height: 200px;
+}
+
+
+.black{
+    background-color: black;
+    height: 100px;
+    width: 500px;
+}
+.red{
+    background-color: red;
+    width: 500px;
+    height: 100px;
+
+}
+.yellow{
+    background-color: yellow;
+    width:500px;
+    height: 100px;
+}

@@ -1,0 +1,20 @@
+.container {
+    background-color: rgb(93, 91, 91);
+    width: 400px;
+    height: 400px;
+}
+
+h1{
+    color: white;
+    font-size: 400%;
+}
+
+p {
+    color: white;
+    font-size: 200%;
+}
+
+a {
+    font-size: 150%;
+    color: blue;
+}

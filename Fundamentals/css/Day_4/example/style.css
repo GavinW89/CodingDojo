@@ -1,0 +1,27 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: antiquewhite;
+}
+
+.conatiner {
+    background-color: white;
+    width: 1000px;
+    height: 1000px;
+}
+
+.red, .purple {
+    display: inline-block;
+}
+
+.red {
+    background-color: red;
+    height: 300px;
+    width: 300px;
+}
+
+.purple {
+    background-color: purple;
+    height: 300px;
+    width: 300px;
+}

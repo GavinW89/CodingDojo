@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+table{
+    height: 100px;
+    border:3px black solid;
+}
+
+td{
+    height: 100px;
+    width: 100px;
+    border: 3px black solid
+}
+
+.clr1 {
+    background-color: bisque;
+}
+
+.clr2 {
+    background-color: black;
+}

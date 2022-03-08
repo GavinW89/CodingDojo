@@ -1,0 +1,21 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    vertical-align: top;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.conatiner {
+    width: 1080px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.head {
+    /* padding: 50px; */
+    height: 50px;
+    color: yellow;
+    background-color: grey;
+
+}

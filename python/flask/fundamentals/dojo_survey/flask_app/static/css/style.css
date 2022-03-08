@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    padding:70px;
+    margin: auto;
+}
+
+.container {
+    width: 1080px;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: rgb(75, 75, 75);
+}
+
+h1 {
+    color: goldenrod;
+    font-size: 300%;
+    margin-bottom: 40px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: white;
+    display: flex;
+    height: 70%;
+}
+
+textarea{
+    height: 200px;
+}
+
+.submit {
+    width: 50%;
+    height: 50px;
+    color: white;
+    background-color: goldenrod;
+}

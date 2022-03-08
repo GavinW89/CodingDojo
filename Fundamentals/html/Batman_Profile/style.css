@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(212, 122, 112);
+}
+h3{
+    background-color: rgb(197, 103, 92);
+}
+.center{
+    text-align: center;
+}
+.picture{
+    margin: auto;
+    display:block;
+}
+#title{
+    background-color: rgb(197, 103, 92);
+    font-size:110px;
+    margin: bottom 36px;
+}
+td,th{
+    border-style: solid;
+    padding: 8px;
+}
+.widen{
+    text-align:center;
+    width: 90px;
+}
+table{
+    border-collapse: collapse;
+}
+.form-group{
+    padding-bottom: 10px;
+}

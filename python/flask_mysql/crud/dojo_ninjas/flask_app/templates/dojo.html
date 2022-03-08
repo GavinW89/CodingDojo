@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojos</title>
+</head>
+<body>
+    <h1>Dojo {{ dojo.id }}</h1>
+    <table>
+        {% for x in  dojo.ninjas %}
+        <tr>
+            <td>{{ x.first_name }}</td>
+            <td>{{ x.last_name }}</td>
+            <td>{{ x.age }}</td>
+            <td>{{ x.created_at }}</td>
+
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

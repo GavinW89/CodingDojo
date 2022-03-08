@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEX</title>
+</head>
+<body>
+    <h1>All Users</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Created At</th>
+        </tr>
+        {% for tr in users %}
+        <tr>
+            <td>{{tr.id}}</td>
+            <td>{{tr.first_name}}</td>
+            <td>{{tr.last_name}}</td>
+            <td>{{tr.email}}</td>
+            <td>{{tr.created_at.strftime("%B %d, %Y")}}</td>
+            <td>
+                <a href="/show/{{tr.id}}">Show</a>
+                <a href="/DeleteUser/{{tr.id}}">Delete</a>
+                <a href="/EditUser/{{tr.id}}">Edit</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/newuser">CREATE NEW USER</a>
+</body>
+</html>

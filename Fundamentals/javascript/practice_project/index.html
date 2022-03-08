@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="words">
+            <h1 class="title">WORK TO-DOS</h1>
+            <p class="enterText"> Enter text into the inoput field to add items to your list.</p>
+            <p class="clickComplete">Click the item to mark it as complete.</p>
+            <p class="clickX">Click the "X" to remove the item from your list</p>
+        </div>
+        <form action="" id="formElem">
+            <input type="text" placeholder="New item..." class="input">
+            <input type="submit" value="+" class="plus" onclick="inputText('.input')">
+        </form>
+        <div>
+            <p class="toDos"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

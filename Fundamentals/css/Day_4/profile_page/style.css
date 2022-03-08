@@ -1,0 +1,368 @@
+*{
+    /*reset*/
+    margin: 0px;
+    padding: 0px;
+    line-height: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#nav {
+    font-family: 'Roboto', sans-serif;
+    height: 1.1em;
+    width: 0 auto;
+    margin: 0px;
+    padding: 25px;
+    background-color: rgb(66, 61, 61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-title {
+    padding: 20px;
+    color: white;
+    align-items: center;
+}
+.nav-links {
+    width: 28.125em;
+    justify-content: space-between;
+    display:flex;
+    list-style-type: none;
+    align-items: center;
+
+}
+
+.nav-links ul li {
+    opacity: .5;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    opacity: 1;
+    cursor: pointer;
+    color: rgb(216, 200, 179);
+}
+
+
+.nav-links .btn {
+    background-color: aqua;
+    width: 6.25em;
+    height: 3.125em;
+    font-size: large;
+    border: black;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 5px 5px 2px black ;
+}
+
+.nav-links .btn:hover {
+    opacity: 1;
+    background-color:rgb(216, 200, 179);
+    cursor: pointer;
+}
+
+.nav-links .btn:active {
+    background-color: aquamarine;
+    box-shadow: 0 5px rgb(0, 0, 0);
+    transform: translate(2px, 2px);
+}
+
+#container {
+    margin-left: 300px;
+    margin-right: 300px;
+    height: 800px;
+    color: aqua;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#containerL {
+    flex-grow: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile {
+    flex-grow: 3;
+    background-color: rgb(255, 255, 255);
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgba(128, 128, 128, 0.582);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.blueBar {
+    background-color: rgb(88, 230, 230);
+    height: 125px;
+    width: inherit;
+}
+
+.blueBar img {
+    border-radius: 50%;
+    width: 125px;
+    position: relative;
+    top: 55px;
+    left: 40px;
+    border: 4px solid rgba(218, 218, 218, 0.822);
+}
+
+.infoP {
+    flex-grow: 1;
+    text-align: start;
+    padding: 30px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.name {
+    color:black;
+    margin-top: 30px;
+}
+
+.location {
+    display: flex;
+    height: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.pinMark {
+    width: 15px;
+    margin-right: 20px
+}
+
+.pDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
+    text-align:start;
+} 
+
+.pDescription ul li {
+    display: inline-block;
+    font-weight: 800;
+}
+
+.editP {
+    margin-left: 5px;
+    font-size: medium;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.editPlink {
+    text-decoration: none;
+    color:blue
+}
+
+.gear, .editP {
+    width: 20px;
+    vertical-align: middle;
+}
+
+.educ {
+    flex-grow: 2;
+    background-color: rgb(87, 58, 20);
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.topmargin {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-left: 20px;
+    color: white;
+    background-color: rgb(104, 102, 102);
+    font-size:larger;
+    font-weight: bolder;
+    border-radius: 5px, 5px, 0px 0px;
+}
+
+.body {
+    flex: 4;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 15px;
+    /* padding-top: 25px; */
+    color: black;
+    background-color: white;
+    border: 3px solid rgba(128, 128, 128, 0.582);
+    box-sizing: border-box;
+}
+
+.educ .body .mainText {
+    position: relative;
+    top: 15px;
+}
+
+.educ .body h3{
+    position: relative;
+    top: 60px;
+    color: rgba(119, 119, 119, 0.966);
+}
+
+.educ .body .lastText {
+    position: relative;
+    top: 100px;
+    font-weight: 600;
+    font-size: larger;
+}
+
+#containerR {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.request .topmargin {
+    justify-content: flex-start;
+    display: flex;
+    margin-top: 40px;
+    border-radius: 5px, 5px, 0px 0px;
+}
+
+.request .topmargin .numRequest {
+    height:30px;
+    width:30px;
+    margin-right: 20px;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    position: relative;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    left: 10px;
+}
+
+.request .body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.request .body img{
+    border-radius: 50%;
+    width: 60px;
+}
+.request .body .requestBox {
+    display: flex;
+    border: 3px solid rgba(128, 128, 128, 0.582);
+    justify-content: space-between;
+}
+
+.imgName {
+    display: flex;
+    align-items: center;
+}
+
+.body .requestBox .imgName .todd {
+    margin-left: 15px;
+}
+
+.acptDny {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    
+}
+.request .body .acptDny img{
+    width: 40px;
+    height: 40px;
+    object-fit: fill;
+
+}
+
+.body .acptDny p {
+    height:40px;
+    width:40px;
+    margin-right: 20px;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    position: relative;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    left: 10px;
+}
+
+.connections .topmargin{
+    justify-content: flex-start;
+    display: flex;
+    margin-top: 40px;
+    border-radius: 5px, 5px, 0px 0px;
+}
+
+.connections .topmargin .connectionNum {
+    height:40px;
+    width:70px;
+    margin-right: 20px;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    position: relative;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    left: 10px;
+}
+
+.connections .body{
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    justify-content: flex-start;
+}
+
+.connections .body .connectionsName {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    vertical-align: middle;
+}
+
+.connections .body .connectionsName .connName{
+    position: relative;
+    left: 125px;
+    bottom: 27px;
+    font-size: x-large;
+}
+.connections .viewmore {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    font-size:larger;
+}
+
+.connections .body .connectionsName .connectProf {
+    margin-top: 10px;
+}

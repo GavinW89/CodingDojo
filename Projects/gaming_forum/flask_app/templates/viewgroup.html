@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{group.groupName}}</title>
+</head>
+<body>
+    <a href="/groups">X</a>
+    <h1>{{group.groupName}}</h1>
+    <a href="/createpostform/{{group.id}}">POST +</a>
+    <h3>{{group.description}}</h3>
+    {% for group in group %}
+    <p>{{posts.post}}</p>
+    {% endfor %}
+</body>
+</html>

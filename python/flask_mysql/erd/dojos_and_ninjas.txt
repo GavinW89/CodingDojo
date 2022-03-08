@@ -1,0 +1,29 @@
+SELECT * FROM dojos;
+INSERT INTO dojos (name) VALUE ("Earth"), ("Air"), ("Fire");
+
+DELETE FROM dojos WHERE id < = 3;
+
+INSERT INTO dojos (name) VALUE ("Earth"), ("Air"), ("Fire");
+
+SELECT * FROM ninjas
+INSERT INTO ninjas(first_name, last_name, age, dojo_iddojo)
+VALUE ("Gavin", "Woods", 21, 2), ("Aang",  "Air Bender", 12, 2), ("Toph", "Beifong", 10, 1);
+
+INSERT INTO ninjas(first_name, last_name, age, dojo_iddojo)
+VALUE ("Matt", "Northdurft", 25, 1), ("Kevin",  "MyDude", 31, 1);
+
+INSERT INTO ninjas(first_name, last_name, age, dojo_iddojo)
+VALUE ("Hank", "Hill", 20, 3), ("John", "Doe", 20, 3), ("Jane", "Doe", 20, 3);
+
+SELECT * FROM ninjas
+JOIN dojos on iddojo = dojo_iddojo
+WHERE dojo_iddojo = 1;
+
+SELECT * FROM ninjas
+JOIN dojos on iddojo = dojo_iddojo
+WHERE dojo_iddojo = 3;
+
+SELECT dojo_iddojo FROM ninjas
+WHERE idNinja = (SELECT MAX(idNinja) FROM ninjas);
+
+

@@ -1,0 +1,89 @@
+*{
+    /*reset*/
+    margin: 0px;
+    padding: 0px;
+    line-height: 0px;
+}
+
+#container {
+    display:flex;
+    flex-direction: column;
+    border: 2px solid rgba(197, 197, 197, 0.842);
+    border-radius: 5px;
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+}
+
+#top {
+    box-sizing: border-box;
+    width: inherit;
+    height: 100px;
+    padding: 10px;
+    background-color: rgb(81, 212, 251);
+}
+
+.pImg {
+    width: 70px;
+    position:relative;
+    bottom: 25px;
+    left: 15px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    
+}
+
+.backpImg {
+    width: 70px;
+    height: 70px;
+    color: rgba(199, 197, 197, 0.274);
+    /* position:relative;
+    top: 50px; */
+}
+
+#info {
+    width: inherit;
+    height: inherit;
+    background-color: white;
+    padding-top: 30px;
+    padding-left: 20px;
+    flex-direction: column;
+    font-size: medium;
+}
+
+#list{
+    width: 315px;
+    margin-top: 10px;
+
+}
+ul > li {
+    display: inline-block;
+    font-weight: 800;
+}
+
+.name {
+    margin-top: 5px;
+    font-size: xx-large;
+}
+
+.location, .marker {
+    margin-top: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.marker {
+    width: 15px;
+    margin-right: 5px;
+}
+
+.editPro {
+    margin-top: 10px;
+}
+
+.gear, .editP {
+    width: 20px;
+    vertical-align: middle;
+}
+
+

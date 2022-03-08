@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="navbar">
+            <h1>Network</h1>
+        </div>
+        <h1 id="titleFeed">Your Feed</h1>
+        <div id="body">
+            <div id="profile">
+                <img src="imgs\user-circle.png" alt="avatar" id="profPic">
+                <a href="#">Add an avatar</a>
+                <h2>James Doe</h2>
+            </div>
+            <div id="rightCol">
+                <div id="feed">
+                    <div class="top">
+                        <div>
+                            <h2 class="name">Neil M</h2>
+                        </div>
+                        <div class="topR">
+                            <p><span class="numLikes" id="0">9</span> like(s)</p>
+                            <button onclick="addLike(0)">Like</button>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>I just set up this new discord bot, lett me know what you all think. <a href="#">link</a></p>
+                    </div>
+                </div>
+                <div id="feed">
+                    <div class="top">
+                        <div>
+                            <h2 class="name">Nichole K</h2>
+                        </div>
+                        <div class="topR">
+                            <p><span class="numLikes" id="1">12</span> like(s)</p>
+                            <button onclick="addLike(1)">Like</button>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>Just finished my <a href="#">next comic</a>, check it out.</p>
+                    </div>
+                </div>
+                <div id="feed">
+                    <div class="top">
+                        <div>
+                            <h2 class="name">Jim R</h2>
+                        </div>
+                        <div class="topR">
+                            <p><span class="numLikes" id="2">9</span> like(s)</p>
+                            <button onclick="addLike(2)">Like</button>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>I can't stop listening to the <a href="#">new album</a>. Who else is liking it?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

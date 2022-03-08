@@ -1,0 +1,35 @@
+.container {
+    width:950px;
+    padding: 20px;
+    background-color: black;
+}
+.conTitle{
+    width: 225px;
+    Height: 75px;
+    padding: 20px;
+    margin-right:0;
+    background-color: rgb(197, 188, 139);
+    margin: 0 auto;
+}
+.col {
+    height: 200px;
+    margin: 50px;
+    padding: 20px;
+    background-color: rgb(235, 235, 181);
+    display: flex;
+    justify-content: space-around;
+}
+#two {
+    background-color: tan;
+    justify-content: space-evenly;
+}
+
+#three {
+    background-color: brown;
+}
+.link {
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+
+}

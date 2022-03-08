@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin:0px;
+    padding:0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+#container {
+    margin: auto;
+    width: 1080px;
+}
+
+#navbar {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    background-color: rgb(84, 218, 207);
+    border-radius: 10px;
+}
+
+#easyBay {
+    font-size: 360%;
+}
+
+#search{
+    width: 550px;
+    height: 30px;
+    border: 2px solid grey;
+    border-radius: 20px;
+    padding-left: 10px;
+    font-size: 120%;
+}
+
+#signIn {
+    background: none;
+    border: none;
+    font-size: 120%;
+}
+
+#cart {
+    width: 50px;
+}
+
+#pageSelection {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 5px solid black;
+    padding-bottom: 15px;
+}
+
+#title {
+    text-align: center;
+    font-size: 300%;
+    font-weight: 300;
+    margin: 20px 0px;
+
+}
+
+#middle {
+    height: 400px;
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+#discover {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    margin-right: 30px;
+}
+
+#discoverLeft {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 60px 30px;
+    background-color: rgb(97, 248, 248);
+}
+
+#discoverLeft p {
+    font-size: 235%;
+    color: white;
+}
+
+#succulentImg{
+    width: 400px;
+    object-fit: cover;
+}
+
+#discoverBtn {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 200%;
+    font-weight: 500;
+}
+
+#aloe {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#aloeBtn {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(97, 248, 248);
+    border: none;
+    text-align: center;
+    color: white;
+    font-size: 150%;
+    font-weight: 500;
+}
+
+#bottom {
+    height: 280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(97, 248, 248);
+}
+
+#bottom img {
+    width: 140px;
+    border-radius: 50%;
+}
+
+#bottom p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 130%;
+    font-weight: 400;
+}
+
+#cookies {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 150px;
+    position:fixed;
+    bottom: 0;
+    width: inherit;
+    border: 3px solid black;
+    background-color: white;
+}
+
+#cookies img{
+    margin: 10px;
+}
+
+#policy {
+    font-size: 120%;
+    font-weight: 600;
+}
+
+#acceptBtn {
+    height: 50px;
+    width: 150px;
+    margin: 20px;
+    color: white;
+    background-color: rgb(12, 159, 179);
+    font-size: 120%;
+    font-weight: 600;
+    border: 3px solid black;
+    box-shadow: 5px 5px 2px black;
+}
+
+#acceptBtn:active{
+    background-color: rgb(13, 200, 224);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}

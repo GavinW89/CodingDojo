@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All recipes</title>
+</head>
+<body>
+    <h1>Welcome {{ user.first_name }}</h1>
+
+    <a href="/create">Create Recipe</a>
+    <a href="/logout">logout</a>
+
+    <table>
+        <th>Name</th>
+        <th>Under 30 Minutes?</th>
+        <th>Actions</th>
+        <!-- FOR LOOP FOR USERS RECIPES -->
+        {% for x in user_recipes %}
+        <tr>
+            <td>{{ x.name }}</td>
+            {% if x.under_thirty == "0" %}
+            <td>NO</td>
+            {% else %}
+            <td>YES</td>
+            {% endif %}
+            <td>
+                <a href="/view/{{x.id}}">View</a>
+                <a href="/edit/{{x.id}}">Edit</a>
+                <a href="/delete/{{x.id}}">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+        <!-- FOR LOOP FOR ALL RECIPES BUT THE USERS -->
+        {% for x in recipes %}
+        <tr>
+            <td>{{ x.name }}</td>
+            <td>{{ x.under_thirty }}</td>
+            <td>
+                <a href="/view/{{x.id}}">View</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+
+</body>
+</html>

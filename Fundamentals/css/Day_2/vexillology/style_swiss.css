@@ -1,0 +1,19 @@
+body{
+    background-color: red;
+}
+#vertical{
+
+    background-color: white;
+    width: 25%;
+    height: 50%px;
+    display: inline-block;
+    margin-left: auto;
+}
+#horizontal{
+    margin-left: auto;
+    margin-top: auto;
+    background-color: white;
+    width: 200px;
+    height: 50px;
+    display: block;
+}

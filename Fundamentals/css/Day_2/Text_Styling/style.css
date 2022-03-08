@@ -1,0 +1,26 @@
+h1{
+    font-size: 45px;
+    font-style: oblique;
+    background-color:black;
+    color: white;
+    padding: 20px;
+}
+.blue{
+    color:aqua;
+}
+h2{
+    padding:20px;
+    font-size: 40px;
+    font-style: italic;
+    text-align:center;
+    background-color:rebeccapurple;
+    color: white;
+}
+h3{
+    padding:20px;
+    font-size: 30px;
+    text-decoration: underline;
+    text-align:right;
+    background-color:lightblue;
+    color:blue
+}
