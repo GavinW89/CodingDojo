@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const ToDo = (props) => {
     const [completed, setCompleted] = useState(false);
