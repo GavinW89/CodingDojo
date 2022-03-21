@@ -98,8 +98,8 @@ def editprofilepost():
         'id': session['user_id'],
         'username': request.form['username'],
         'email': request.form['email'],
-        'password': request.form['password'],
-        'confirm_password': pw_hash
+        'password': pw_hash,
+        'confirm_password': request.form['confirm_password']
     }
     if User.get_username_notby_id(data):
         flash('An account with this username already exsist')

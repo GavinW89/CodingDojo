@@ -38,6 +38,9 @@ class Post:
         return results
     @classmethod
     def viewpost(cls,data):
-        query = 'SELECT * FROM posts WHERE id = %(post_id)s;'
+        query = 'SELECT * from posts where user_id = %(user_id)s ORDER BY id DESC'
         results = connectToMySQL("ForumDB").query_db(query,data)
-        return results[0]
+        all_posts = []
+        for row in results:
+            all_posts.append(cls(row))
+        return all_posts[0]

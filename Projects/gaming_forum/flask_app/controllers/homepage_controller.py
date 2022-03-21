@@ -8,4 +8,5 @@ from flask_app.models.group import Group
 @app.route('/')
 def homepage():
     posts = Post.get_all_posts()
+    print(posts)
     return render_template('homepage.html', posts = posts)

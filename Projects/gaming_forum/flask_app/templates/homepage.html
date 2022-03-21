@@ -30,11 +30,12 @@
     </div>
     <div class="posts">
         <div>
-            <h4 class="group" >Group</h4>
+            <!-- <h4 class="group" >Group</h4>
             <h4 class="title">Title</h4>
             <p class="username">Username</p>
-            <p class="post">Post</p>
+            <p class="post">Post</p> -->
             {% for post in posts %}
+            <h1>{{post.title}}</h1>
             <a href="/viewpost/{{post.id}}">{{post.title}}</a>
             <br>
             {% endfor %}
