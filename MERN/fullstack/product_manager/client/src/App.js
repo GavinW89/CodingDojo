@@ -1,7 +1,8 @@
 import Productform from './components/productform';
 import './App.css';
 import Main from './views/Main';
-import { Route, Switch } from 'react-router-dom';
+import { Link, Route, Switch} from 'react-router-dom';
+import OneProduct from './components/oneProduct';
 
 function App() {
   return (
@@ -9,7 +10,15 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path="/">
+          <Link to="/create">Create</Link>
           <Main/>
+        </Route>
+        <Route exact path="/create">
+          <Link to="/">Home</Link>
+          <Productform/>
+        </Route>
+        <Route exact path="/:_id">
+          <OneProduct/>
         </Route>
     </Switch>
     </div>

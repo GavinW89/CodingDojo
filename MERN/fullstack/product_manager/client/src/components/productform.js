@@ -2,9 +2,6 @@ import React, {useState} from "react";
 import axios from "axios";
 
 export default props =>{
-    const [title, setTitle] = useState("")
-    const [price, setPrice] = useState(0)
-    const [description, setDescription] = useState("")
     const[form, setForm] = useState({
         title: "",
         price: 0,
