@@ -7,5 +7,4 @@ module.exports = app => {
     app.post('/createJob', JobController.createJob);
     app.patch('/updateJob/:_id', JobController.updateJob);
     app.delete('/deleteJob/:_id', JobController.deleteJob);
-
 }

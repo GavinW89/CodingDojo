@@ -19,7 +19,7 @@ function App() {
             <Create/>
           </Route>
 
-          <Route exact path="/jobs/:_id">
+          <Route exact path="/oneJob/:_id">
             <SingleJob/>
           </Route>
 

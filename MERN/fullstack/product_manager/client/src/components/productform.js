@@ -1,7 +1,9 @@
 import React, {useState} from "react";
 import axios from "axios";
+import { useHistory } from "react-router-dom";
 
 export default props =>{
+    const history = useHistory();
     const[form, setForm] = useState({
         title: "",
         price: 0,
@@ -18,7 +20,10 @@ export default props =>{
     const onSubmitHandler = (e) => {
         e.preventDefault();
         axios.post('http://localhost:8000/create',form)
-            .then(res=>console.log('Response ', res))
+            .then(res=>{
+                console.log('Response ', res)
+                history.push('/')
+            })
             .catch(err=>console.log('Error: ', err))
         console.log("form submited")
     }

@@ -3,6 +3,7 @@ import './App.css';
 import Main from './views/Main';
 import { Link, Route, Switch} from 'react-router-dom';
 import OneProduct from './components/oneProduct';
+import EditProduct from './components/EditProduct';
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
         </Route>
         <Route exact path="/:_id">
           <OneProduct/>
+        </Route>
+        <Route exact path="/:_id/edit">
+          <EditProduct/>
         </Route>
     </Switch>
     </div>
