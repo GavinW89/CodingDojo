@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import { useHistory, Link} from 'react-router-dom';
 export default props => {
     const [error, setError] = useState({});
-    // const history = useHistory();
+    const history = useHistory();
     const [form, setForm] = useState({
         name: '',
         email: '',
@@ -14,7 +14,7 @@ export default props => {
     const onChangeHandler = (e) => {
         setForm({
             ...form,
-            [e.target.name]: e.target.type
+            [e.target.name]: e.target.value
         })
     }
 
@@ -23,10 +23,11 @@ export default props => {
         axios.post('http://localhost:8000/api/users/register', form, {withCredentials:true})
             .then(res =>{
                 console.log(res)
-                // history.push('/main')
+                history.push('/main')
             })
             .catch(err => {
-                setError(err.response.data.error.errors)
+                // setError(err.response.data.error.errors)
+                console.log(err)
             })
     }
 
@@ -35,7 +36,8 @@ export default props => {
         width: '700px',
         padding: '40px',
         marginTop: '60px',
-        marginLeft: '40px'
+        marginLeft: '40px',
+        backgroundColor: 'white'
     }
 
     return(
@@ -65,7 +67,7 @@ export default props => {
                 <div className='form-group mt-3'>
                     <label className='font-weight-bold h4'>Confirm Password:</label>
                     <div className='input-group input-group-lg'>
-                    <input type="password" className='form-control border border-dark mt-2 mb-4 mx-auto w-75' placeholder='Confirm Password' onChange={onChangeHandler}/>
+                    <input type="password" className='form-control border border-dark mt-2 mb-4 mx-auto w-75' name="confirm" placeholder='Confirm Password' onChange={onChangeHandler}/>
                     </div>
                 </div>
                 <div>

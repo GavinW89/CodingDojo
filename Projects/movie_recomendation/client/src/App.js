@@ -7,11 +7,18 @@ import MenuAppBar from './components/Menubar';
 import RegistrationForm from './components/RegistrationForm';
 import LoginForm from './components/LoginForm'
 import MovieBox from './components/MovieBox';
-import Main from './views/Main'
+import Main from './views/Main';
+import {useEffect} from "react";
 
 
 
 function App() {
+  // useEffect(()=>{
+  //   axios.get("http://localhost:8000/api/users/getall")
+  //     .then(res=>console.log(res))
+  //     .catch(err=>console.log(err))
+  // },[])
+
   return (
     <div className="App">
         <MenuAppBar/>

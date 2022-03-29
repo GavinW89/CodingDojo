@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import { useHistory, Link} from 'react-router-dom';
 export default props => {
     const [error, setError] = useState({});
-    // const history = useHistory();
+    const history = useHistory();
     const [form, setForm] = useState({
         name: '',
         email: '',
@@ -23,7 +23,7 @@ export default props => {
         axios.post('http://localhost:8000/api/users/register', form, {withCredentials:true})
             .then(res =>{
                 console.log(res)
-                // history.push('/main')
+                history.push('/main')
             })
             .catch(err => {
                 setError(err.response.data.error.errors)
@@ -35,7 +35,8 @@ export default props => {
         width: '700px',
         padding: '40px',
         marginTop: '60px',
-        marginLeft: '40px'
+        marginLeft: '40px',
+        backgroundColor: 'white'
     }
 
 
