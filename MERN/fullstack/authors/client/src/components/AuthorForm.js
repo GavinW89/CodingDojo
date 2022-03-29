@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios';
+import React, {  useState } from 'react'
+
 export default props => {
-    const { initialName, onSubmitProp } = props;
+    const { initialName, onSubmitProp, error} = props;
     const [name, setName] = useState(initialName);
     const onSubmitHandler = e => {
         e.preventDefault();
@@ -11,7 +11,9 @@ export default props => {
     return (
         <form onSubmit={onSubmitHandler}>
             <p>
-                <label>Name</label><br />
+                <label>Name</label>
+                <p>{error.name && error.name.message}</p>
+                
                 <input 
                     type="text" 
                     name="name" value={name} 

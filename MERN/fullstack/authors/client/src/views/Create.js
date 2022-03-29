@@ -5,17 +5,29 @@ import AuthorForm from '../components/AuthorForm';
 
 export default props =>{
     const history = useHistory();
+    const [error, setError] = useState({});
+    // const [loaded, setLoaded] = useState(false)
 
     const createAuthor = (name) =>{
         axios.post('http://localhost:8000/api/authors', name)
             .then(res=>{
                 console.log(res)
+                console.log(name)
                 history.push('/')
             })
-            .catch(err => {console.log(err.response)})
+            .catch(err => {
+                // console.log(err)
+                setError(err.response.data.error.errors)
+                // console.log(err.response)
+            })
     }
 
     return(
-        <AuthorForm onSubmitProp={createAuthor} initialName=''/>
+        <div>
+            <AuthorForm onSubmitProp={createAuthor} initialName='' error={error}/>
+            {/* <br />
+            <p>{error.name && error.name.message}</p>
+            <br /> */}
+        </div>
     )
 }
