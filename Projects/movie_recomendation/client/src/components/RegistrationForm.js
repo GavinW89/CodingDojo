@@ -2,14 +2,21 @@ import axios from 'axios';
 import React, {useState} from 'react';
 import { useHistory, Link} from 'react-router-dom';
 export default props => {
-    const [error, setError] = useState({});
     const history = useHistory();
+    const [error, setError] = useState({
+        name: '',
+        email: '',
+        password: '',
+        confirm: ''
+    });
     const [form, setForm] = useState({
         name: '',
         email: '',
         password: '',
         confirm: ''
     });
+
+
 
     const onChangeHandler = (e) => {
         setForm({
@@ -26,7 +33,7 @@ export default props => {
                 history.push('/main')
             })
             .catch(err => {
-                // setError(err.response.data.error.errors)
+                setError(response.data.errors)
                 console.log(err)
             })
     }
