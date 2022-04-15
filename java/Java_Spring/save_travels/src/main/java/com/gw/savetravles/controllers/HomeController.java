@@ -7,7 +7,10 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.gw.savetravles.models.Expense;
 import com.gw.savetravles.services.ExpenseService;
@@ -43,5 +46,44 @@ public class HomeController {
 		}
 	}
 	
+	// Route to show one expense
+	@GetMapping("/oneExpense/{id}")
+	public String oneExpense(@PathVariable("id") Long id, Model model) {
+		
+		model.addAttribute("expense", expenseService.findExpense(id));
+		
+		return "oneExpense.jsp";
+	}
+	
+	//Route to delete
+	@GetMapping("/delete/{id}")	
+	public String delete(@PathVariable("id") Long id) {
+		
+		expenseService.delete(id);
+		
+		return "redirect:/";
+	}
+	
+	//Route to render update form
+	@GetMapping("/updateExpense/{id}")	
+	public String updateExpenseForm(@PathVariable("id") Long id, @ModelAttribute("expense") Expense expense, Model model) {
+		
+		model.addAttribute("expense", expenseService.findExpense(id));
+		
+		return "updateExpense.jsp";
+	}
+	
+	// Process the post to update candy
+	
+	@RequestMapping(value="/updatingExpense/{id}", method=RequestMethod.PUT)
+	public String updatingExpense(@Valid @ModelAttribute("expense") Expense expense, BindingResult result, @PathVariable("id") Long id) {
+		if(result.hasErrors()) {
+			return "updateExpense.jsp";
+		}else {
+			expenseService.updateExpense(expense);
+			return "redirect:/";
+		}
+		
+	}
 	
 }

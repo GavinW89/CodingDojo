@@ -31,32 +31,14 @@
 
     <div class="container"> 
     
-        <h1>Save Travels</h1>
-        
+        <h1>Update Travels</h1>
+        <a href="/">Go Back</a>
        	<div>
-       		<table class="table table-dark talbe-striped table-hover w-100">
-       			<tr>
-					  <th class="center-text">Purchase</th>     			
-					  <th class="center-text">Vendor</th>     			
-					  <th class="center-text">Amount</th>     			
-					  <th class="center-text">Actions</th>     			
-       			</tr>
-       			
-       				<c:forEach var="i" items="${allExpenses}">
-       					<tr>
-       					<td class="center-text"><a href="/oneExpense/${i.id}"><c:out value="${i.purchase }"/></a></td>
-       					<td class="center-text"><c:out value="${i.vendor }"/></td>
-       					<td class="center-text">$<c:out value="${i.amount }"/></td>
-       					<td class="center-text"><a href="/updateExpense/${i.id}" class="btn btn-primary">Update</a>
-       					<a href="/delete/${i.id}" class="btn btn-danger">Delete</a></td>
-       					</tr>
-       				</c:forEach>
-       			
-       		</table>
+       	
        		<div>
        			<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>    
-				<h1>Add New Expense</h1>
-				<form:form action="/processExpense" method="post" modelAttribute="expense">
+				<form:form action="/updatingExpense/${id}" method="post" modelAttribute="expense">
+				<input type="hidden" name="_method" value="put"/>
 				    <p>
 				        <form:label path="purchase">Expense</form:label>
 				        <form:errors path="purchase" class="alert-danger"/>
